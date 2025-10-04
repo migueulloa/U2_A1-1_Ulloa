@@ -11,7 +11,6 @@ app.config['WTF_CSRF_ENABLED'] = True
 app.config['SESSION_COOKIE_HTTPONLY'] = True
 app.config['SESSION_COOKIE_SECURE'] = False
 
-# --- Login Manager ---
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login' 
@@ -43,7 +42,6 @@ def load_user(user_id):
         return User(user_data['id'], user_data['username'], user_data['password_hash'])
     return None
 
-# --- Rutas ---
 @app.route('/')
 def index():
     return render_template('base.html')

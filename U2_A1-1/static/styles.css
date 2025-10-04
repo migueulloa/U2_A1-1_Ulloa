@@ -1,6 +1,3 @@
-/* styles.css - CSS básico para la práctica Flask */
-
-/* Reset simple */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
 body {
@@ -20,7 +17,6 @@ body {
   padding: 20px;
 }
 
-/* Header / Nav */
 header { margin-bottom: 16px; }
 nav a {
   text-decoration: none;
@@ -30,7 +26,6 @@ nav a {
 }
 nav a:hover { text-decoration: underline; }
 
-/* Flashes */
 #flashes { margin: 12px 0; }
 #flashes ul { list-style: none; }
 #flashes li.flash { padding: 10px 12px; border-radius: 6px; margin-bottom: 8px; }
@@ -39,7 +34,6 @@ nav a:hover { text-decoration: underline; }
 #flashes li.flash.warning { background: #fffbeb; color: #7c2d12; border: 1px solid rgba(124,45,18,0.06); }
 #flashes li.flash.info    { background: #eef2ff; color: #3730a3; border: 1px solid rgba(55,48,163,0.06); }
 
-/* Forms */
 form { margin-top: 12px; }
 form p { margin-bottom: 12px; }
 label { display: block; font-weight: 600; margin-bottom: 6px; }
@@ -57,7 +51,6 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
 }
 
-/* Buttons */
 button, .btn {
   display: inline-block;
   padding: 8px 14px;
@@ -70,10 +63,8 @@ button, .btn {
 .btn-primary:hover { opacity: 0.95; }
 .btn-ghost { background: transparent; color: #374151; border: 1px solid #e5e7eb; }
 
-/* Error messages for fields */
 .error { color: #b91c1c; font-size: 13px; display: block; margin-top: 6px; }
 
-/* Profile */
 .profile-card {
   padding: 18px;
   border-radius: 8px;
@@ -81,10 +72,8 @@ button, .btn {
   background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
 }
 
-/* Footer */
 footer { margin-top: 18px; color: #6b7280; font-size: 14px; }
 
-/* Responsive */
 @media (max-width: 640px) {
   body { padding: 12px; }
   .container { padding: 14px; }
